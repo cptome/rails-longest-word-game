@@ -1,0 +1,11 @@
+<h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p>
+<h2>Estas son tus letras</h2>
+<p><%= @letters %> </p>
+
+<form action="score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="palabra">
+  <input type="submit" value="Escribe tu palabra">
+</form>
+   
